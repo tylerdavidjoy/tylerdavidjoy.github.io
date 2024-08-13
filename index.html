@@ -7,6 +7,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJQKX1F9X8"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-LJQKX1F9X8');
+</script>
+
 <style>
 
     .img-container {
@@ -27,16 +37,16 @@
         transform: rotate(30deg);
     }
 
-    .product-device::before {
-        position: absolute;
-        top: 10%;
-        right: 10px;
-        bottom: 10%;
-        left: 10px;
-        content: "";
-        background-color: rgba(255, 255, 255, .1);
-        border-radius: 5px;
-    }
+        .product-device::before {
+            position: absolute;
+            top: 10%;
+            right: 10px;
+            bottom: 10%;
+            left: 10px;
+            content: "";
+            background-color: rgba(255, 255, 255, .1);
+            border-radius: 5px;
+        }
 
     .product-device-2 {
         top: -25%;
@@ -62,11 +72,11 @@
             videoId: 'CGeO9z8WgTI',
             playerVars: {
                 'playsinline': 1,
-                'start':61
+                'start': 61
             },
             events: {
                 'onReady': function (event) {
-                    event.target.setVolume(10);  
+                    event.target.setVolume(10);
                 }
             }
         });
@@ -173,7 +183,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
                 <div style="align-content:center">
-                    <div  style="display:block; margin:auto;" id="demovideo"></div>
+                    <div style="display:block; margin:auto;" id="demovideo"></div>
                 </div>
                 <div class="rounded" style="background-color: #ba9ee6; text-align:center; margin-top:2%;">
                     <h5>Apostles Creed</h5>
@@ -185,11 +195,11 @@
                 <img src="./images/orgpay.png" class="d-block w-100" alt="Organization Payments site" height="701">
                 <div class="carousel-caption rounded" style="background-color: #ba9ee6; right:3%; left:3%;">
                     <h5>Organization Payments</h5>
-                    <p>This is a digital storefront for OC campus organizations to sell merchandise or collect fees. <br/> Feel free to check it out: <a href="https://orgpay.oc.edu/">Orgpay.oc.edu</a></p>                    
+                    <p>This is a digital storefront for OC campus organizations to sell merchandise or collect fees. <br /> Feel free to check it out: <a href="https://orgpay.oc.edu/">Orgpay.oc.edu</a></p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./images/PersonAI.png" class="d-block w-100" alt="PersonAI" height="701";>
+                <img src="./images/PersonAI.png" class="d-block w-100" alt="PersonAI" height="701" ;>
                 <div class="carousel-caption rounded" style="background-color: #ba9ee6; right:3%; left:3%;">
                     <h5>PersonAI</h5>
                     <p>A personal assistant I developed geared towards privacy and customization. This application does not store any voice recordings and allowed for integration with any available home automation API. I build a physical unit, like a google home, and a mobile app.</p>
